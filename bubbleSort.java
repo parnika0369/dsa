@@ -10,7 +10,7 @@ public class bubbleSort {
         for (int i=0;i<n;i++){
             array[i]= sc.nextInt();
         }
-        System.out.println("Before swaping");
+        System.out.println("Before Sorting");
         for(int i=0;i<n;i++){
             System.out.print(array[i]+" ");
         }
@@ -28,7 +28,7 @@ public class bubbleSort {
             }
         }
 
-        System.out.println("After Swapping");
+        System.out.println("After Sorting");
         for(int i=0;i<n;i++){
             System.out.print(array[i]+" ");
         }

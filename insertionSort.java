@@ -10,21 +10,25 @@ public class insertionSort {
         for (int i=0;i<n;i++){
             array[i]= sc.nextInt();
         }
-        System.out.println("Before swaping");
+        System.out.println("Before Sorting");
         for(int i=0;i<n;i++){
             System.out.print(array[i]+" ");
         }
         System.out.println(" ");
 
-        //swaping
-        for(int i=0;i<(n-1);i++){
-            
+        //sorting
+        for(int i=0;i<n;i++){
+            int j=i;
+            while (j>0 && array[j]<array[j-1]){
+                //swapping
+                int temp=array[j-1];
+                array[j-1]=array[j];
+                array[j]=temp;
+                j--;
+            }
         }
-
-
-
-
-        System.out.println("After Swapping");
+        
+        System.out.println("After Sorting");
         for(int i=0;i<n;i++){
             System.out.print(array[i]+" ");
         }
