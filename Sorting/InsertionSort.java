@@ -1,6 +1,7 @@
 import java.util.Scanner;
-public class selectionSort{
-    public static void main(String[]args){
+
+public class InsertionSort {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of array");
         int n = sc.nextInt();
@@ -16,23 +17,22 @@ public class selectionSort{
         System.out.println(" ");
 
         //sorting
-        for(int i=0;i<(n-1);i++){
-            int min = i;
-            for(int j=i;j<(n);j++){
-                if (array[j]<array[min]){
-                    min = j;
-                }
+        for(int i=0;i<n;i++){
+            int j=i;
+            while (j>0 && array[j]<array[j-1]){
+                //swapping
+                int temp=array[j-1];
+                array[j-1]=array[j];
+                array[j]=temp;
+                j--;
             }
-            //swap
-            int temp = array[i];
-            array[i] = array[min];
-            array[min] = temp;
-
         }
+        
         System.out.println("After Sorting");
         for(int i=0;i<n;i++){
             System.out.print(array[i]+" ");
         }
         System.out.println(" ");
+        }
     }
-}
+

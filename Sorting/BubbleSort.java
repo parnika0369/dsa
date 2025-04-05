@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class insertionSort {
+public class BubbleSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of array");
@@ -17,22 +17,22 @@ public class insertionSort {
         System.out.println(" ");
 
         //sorting
-        for(int i=0;i<n;i++){
-            int j=i;
-            while (j>0 && array[j]<array[j-1]){
-                //swapping
-                int temp=array[j-1];
-                array[j-1]=array[j];
-                array[j]=temp;
-                j--;
+        for(int i=(n-1);i>0;i--){
+            for(int j=0;j<i;j++){
+                if (array[j]>array[j+1]){
+                     //swap
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
             }
         }
-        
+
         System.out.println("After Sorting");
         for(int i=0;i<n;i++){
             System.out.print(array[i]+" ");
         }
         System.out.println(" ");
-        }
     }
+}
 
