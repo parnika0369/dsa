@@ -1,4 +1,4 @@
-
+//find the largest element of array
 //brute-->sorting
 //optimal 
 import java.util.Scanner;
