@@ -19,7 +19,7 @@ class BS{
     }
 }
 
-public class SortedArray{
+public class BS_SortedArray{
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         System.out.println("enter size");
