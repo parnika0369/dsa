@@ -1,7 +1,7 @@
 package ArrayQues;
 import java.util.Scanner;
 public class LargestElement {
-    public static void main(String[]args){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int len = sc.nextInt();
         int array[] = new int[len];
